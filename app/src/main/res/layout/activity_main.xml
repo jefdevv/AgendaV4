@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".ui.MainActivity">
+
+
+    <ImageView
+        android:id="@+id/idHead"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:background="@drawable/headbackground"
+        android:contentDescription="@string/head_image"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/component1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edtName"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="60dp"
+        android:autofillHints="name"
+        android:backgroundTint="@color/txtColor"
+        android:hint="@string/insert_your_name_here"
+        android:inputType="text"
+        android:maxLength="15"
+        android:textColor="@color/txtColor"
+        android:textColorHint="@color/txtColor"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <EditText
+        android:id="@+id/edtPhone"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="190dp"
+        android:autofillHints="name"
+        android:backgroundTint="@color/txtColor"
+        android:digits="()0123456789"
+        android:hint="@string/insert_your_phone_number_here"
+        android:inputType="phone"
+        android:maxLength="13"
+        android:textColor="@color/txtColor"
+        android:textColorHint="@color/txtColor"
+        app:layout_constraintBottom_toBottomOf="@id/idHead"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <ImageView
+        android:id="@+id/btnSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="29dp"
+        android:background="@drawable/btnsave"
+        android:contentDescription="@string/save_buton"
+        app:layout_constraintBottom_toBottomOf="@id/edtPhone"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/component2"
+        app:layout_constraintBottom_toBottomOf="@id/idHead"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/gridtextbox"
+        android:padding="10dp"
+        app:layout_constraintBottom_toBottomOf="@id/idHead"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <RadioButton
+            android:id="@+id/rdbMan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/man"
+            android:textColor="@color/black" />
+
+        <RadioButton
+            android:id="@+id/rdbWoman"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/woman"
+            android:textColor="@color/black" />
+
+        <RadioButton
+            android:id="@+id/rdbOther"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/other"
+            android:textColor="@color/black" />
+
+    </RadioGroup>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler"
+        android:layout_width="match_parent"
+        android:layout_height="450dp"
+        android:layout_marginTop="350dp"
+        android:paddingStart="5dp"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

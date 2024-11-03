@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">AgendaV4</string>
+    <string name="campo_vazio">Empty field</string>
+    <string name="insert_your_name_here">Insert Your Name Here !</string>
+    <string name="insert_your_phone_number_here">Insert Your Phone Number Here !</string>
+    <string name="man">Man</string>
+    <string name="woman">Woman</string>
+    <string name="other">Other</string>
+    <string name="save">Save</string>
+    <string name="name">Name :</string>
+    <string name="tel">Tel :</string>
+    <string name="imagem_de_lixeira">Trash Image</string>
+    <string name="save_buton">Save button</string>
+    <string name="head_image">head image</string>
+    <string name="back">Back</string>
+</resources>
